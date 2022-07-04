@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF911735286CEBAF00B4DFFB /* FaceEmojiField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF911734286CEBAF00B4DFFB /* FaceEmojiField.framework */; };
+		AF911736286CEBAF00B4DFFB /* FaceEmojiField.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF911734286CEBAF00B4DFFB /* FaceEmojiField.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFCEE9D7286C3E0000BE0286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEE9D6286C3E0000BE0286 /* AppDelegate.swift */; };
 		AFCEE9D9286C3E0000BE0286 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEE9D8286C3E0000BE0286 /* SceneDelegate.swift */; };
 		AFCEE9DB286C3E0000BE0286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEE9DA286C3E0000BE0286 /* ViewController.swift */; };
@@ -15,7 +17,22 @@
 		AFCEE9E3286C3E0300BE0286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCEE9E1286C3E0300BE0286 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AF911737286CEBAF00B4DFFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF911736286CEBAF00B4DFFB /* FaceEmojiField.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AF911734286CEBAF00B4DFFB /* FaceEmojiField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FaceEmojiField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCEE9D3286C3E0000BE0286 /* FaceEmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceEmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCEE9D6286C3E0000BE0286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFCEE9D8286C3E0000BE0286 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +48,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF911735286CEBAF00B4DFFB /* FaceEmojiField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF911733286CEBAF00B4DFFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF911734286CEBAF00B4DFFB /* FaceEmojiField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFCEE9CA286C3DFF00BE0286 = {
 			isa = PBXGroup;
 			children = (
 				AFCEE9D5286C3E0000BE0286 /* FaceEmoji */,
 				AFCEE9D4286C3E0000BE0286 /* Products */,
+				AF911733286CEBAF00B4DFFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +104,7 @@
 				AFCEE9CF286C3E0000BE0286 /* Sources */,
 				AFCEE9D0286C3E0000BE0286 /* Frameworks */,
 				AFCEE9D1286C3E0000BE0286 /* Resources */,
+				AF911737286CEBAF00B4DFFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

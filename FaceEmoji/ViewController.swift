@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import FaceEmojiField
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var inputTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        inputTextView.addFaceEmojiButton(parent: view, onViewController: self)
     }
-
-
 }
 
