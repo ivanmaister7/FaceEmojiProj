@@ -15,6 +15,8 @@
 		AFCEE9DE286C3E0000BE0286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCEE9DC286C3E0000BE0286 /* Main.storyboard */; };
 		AFCEE9E0286C3E0300BE0286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCEE9DF286C3E0300BE0286 /* Assets.xcassets */; };
 		AFCEE9E3286C3E0300BE0286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCEE9E1286C3E0300BE0286 /* LaunchScreen.storyboard */; };
+		AFD4E4CE28736B0300A982F9 /* FaceEmojiField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF911734286CEBAF00B4DFFB /* FaceEmojiField.framework */; };
+		AFD4E4D428736C0700A982F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFD4E4D328736C0700A982F9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,7 @@
 		AFCEE9DF286C3E0300BE0286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFCEE9E2286C3E0300BE0286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFCEE9E4286C3E0300BE0286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD4E4D328736C0700A982F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF911735286CEBAF00B4DFFB /* FaceEmojiField.framework in Frameworks */,
+				AFD4E4CE28736B0300A982F9 /* FaceEmojiField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 		AFCEE9D5286C3E0000BE0286 /* FaceEmoji */ = {
 			isa = PBXGroup;
 			children = (
+				AFD4E4D328736C0700A982F9 /* GoogleService-Info.plist */,
 				AFCEE9D6286C3E0000BE0286 /* AppDelegate.swift */,
 				AFCEE9D8286C3E0000BE0286 /* SceneDelegate.swift */,
 				AFCEE9DA286C3E0000BE0286 /* ViewController.swift */,
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCEE9E3286C3E0300BE0286 /* LaunchScreen.storyboard in Resources */,
+				AFD4E4D428736C0700A982F9 /* GoogleService-Info.plist in Resources */,
 				AFCEE9E0286C3E0300BE0286 /* Assets.xcassets in Resources */,
 				AFCEE9DE286C3E0000BE0286 /* Main.storyboard in Resources */,
 			);

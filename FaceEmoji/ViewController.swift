@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        inputTextView.addFaceEmojiButton(parent: view, onViewController: self)
+//        inputTextView.addFaceEmojiButton(parent: view,
+//                                         onViewController: self,
+//                                         withPicker: false)
+        inputTextView.addFaceEmojiLiveButton(parent: view, onViewController: self)
     }
 }
 
