@@ -1,3 +1,3 @@
-[submodule "FaceEmojiFields"]
-	path = FaceEmojiFields
+[submodule "FaceEmojiField"]
+	path = FaceEmojiField
 	url = https://github.com/ivanmaister7/FaceEmojiField.git
