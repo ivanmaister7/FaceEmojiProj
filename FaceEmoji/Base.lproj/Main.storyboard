@@ -16,11 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-HA-P4F">
+                                <rect key="frame" x="0.0" y="434" width="364" height="40"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YbQ-wa-00Y"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Fw-m5-Aps">
-                                <rect key="frame" x="0.0" y="433" width="364" height="40"/>
+                                <rect key="frame" x="0.0" y="244" width="364" height="40"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3Tp-RN-WYA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-Ab-rJs">
+                                <rect key="frame" x="0.0" y="624" width="364" height="40"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QI6-L8-twC"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -30,13 +50,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="WcZ-HA-P4F" firstAttribute="top" secondItem="0Fw-m5-Aps" secondAttribute="bottom" constant="150" id="4gN-KN-G3L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Fw-m5-Aps" secondAttribute="trailing" constant="50" id="DAT-rK-whm"/>
-                            <constraint firstItem="0Fw-m5-Aps" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="p1m-08-baQ"/>
+                            <constraint firstItem="0Fw-m5-Aps" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="QVL-HP-ZZ4"/>
+                            <constraint firstItem="Fut-Ab-rJs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VQP-7k-iBf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WcZ-HA-P4F" secondAttribute="trailing" constant="50" id="a0P-hV-M0a"/>
+                            <constraint firstItem="WcZ-HA-P4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ghL-eo-PG7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fut-Ab-rJs" secondAttribute="trailing" constant="50" id="iwh-j2-K9a"/>
+                            <constraint firstItem="Fut-Ab-rJs" firstAttribute="top" secondItem="WcZ-HA-P4F" secondAttribute="bottom" constant="150" id="kR0-yL-BJV"/>
                             <constraint firstItem="0Fw-m5-Aps" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pB2-ML-7x0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="inputTextView" destination="0Fw-m5-Aps" id="Vos-9f-acC"/>
+                        <outlet property="inputTextView2" destination="WcZ-HA-P4F" id="9Tr-jt-uKx"/>
+                        <outlet property="inputTextView3" destination="Fut-Ab-rJs" id="HXt-Iy-bWA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
